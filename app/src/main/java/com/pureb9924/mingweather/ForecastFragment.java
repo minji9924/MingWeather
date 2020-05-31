@@ -90,7 +90,7 @@ public class ForecastFragment extends Fragment {
             // Construct the URL for the OpenWeatherMap query
             // Possible parameters are avaiable at OWM's forecast API page, at
             // http://openweathermap.org/API#forecast
-            String baseUrl = "http://api.openweathermap.org/data/2.5/forecast/daily?id=1835847&cnt=7&appid=583bcb17c8ef103c1ee9660c02d32471";
+            String baseUrl = "http://api.openweathermap.org/data/2.5/forecast?id=1835847&appid=583bcb17c8ef103c1ee9660c02d32471";
             URL url = new URL(baseUrl);
 
             // Create the request to OpenWeatherMap, and open the connection
@@ -137,7 +137,6 @@ public class ForecastFragment extends Fragment {
                 }
             }
         }
-
         return rootView;
     }
 }
